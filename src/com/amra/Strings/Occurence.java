@@ -9,5 +9,6 @@ public class Occurence {
 		Scanner in = new Scanner(System.in);
 		String str = in.next();
 		
+		System.out.println(str);
 	}
 }
