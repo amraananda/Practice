@@ -27,6 +27,8 @@ public class DateTime {
 		Calendar calender  = Calendar.getInstance();
 		
 		calender.set(Calendar.YEAR, nyear);
+		
+		
 		calender.set(Calendar.MONTH, nmonth-1);
 		calender.set(Calendar.DAY_OF_MONTH, nday);
 		
