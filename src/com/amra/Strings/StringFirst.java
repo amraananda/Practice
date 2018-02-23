@@ -2,6 +2,7 @@ package com.amra.Strings;
 
 import java.util.Scanner;
 
+
 public class StringFirst {
 
 	public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class StringFirst {
         System.out.println(sumofStrings(A,B));
         lexicographicallyLarger(A,B);
         captialize(A,B);
+        sc.close();
 	}
 
 	public static int sumofStrings(String a, String b) {
