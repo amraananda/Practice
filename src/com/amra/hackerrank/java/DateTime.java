@@ -36,6 +36,5 @@ public class DateTime {
 		String[] days = {"SUNDAY","MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"};
 		return(days[dayOfWeek-1]);
 		
-	
-	}
+			}
 }

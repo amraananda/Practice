@@ -5,27 +5,29 @@ import java.util.Scanner;
 public class SubStringComparisions {
 
 	public static String getSmallestAndLargest(String s, int k) {
-        String smallest = "";
-        String largest = "";
+        String m,M;
+        //m=M=s.substring(0, k);
+        
+        String smallest = "z";
+        String largest = "a";
         
         for(int i =0 ; i <= s.length()-k; i++){
+        	m=M=s.substring(i, i+k);
         	String subStr = s.substring(i, i+k);
         	if(subStr.matches("[a-zA-Z]+"))
         	{
         		//System.out.println(subStr);
-        		if(s.compareTo(subStr) < 0){
-            		smallest = subStr ;
-            	}else if(s.compareTo(subStr) > 0){
+        		//if(s.compareTo(subStr) <=0){
+            		if(subStr.compareTo(smallest)<0 ){
+        			smallest = subStr ;
+            	}else if(subStr.compareTo(largest)>0){
+            		//if(subStr.compareTo(largest)>0)
             		largest = subStr;
             	}
         	}
-//        	if(s.compareTo(subStr)<0){
-//        		smallest = subStr ;
-//        	}else if(s.compareTo(subStr) > 0){
-//        		largest = subStr;
-//        	}
+
         }
-        return smallest + "\n" + largest;
+        return   smallest +"-"+largest;
     }
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
